@@ -12,13 +12,39 @@ body {
     font-size: 15px;
 }
 
+/* clases generales */
+.margin-top {
+    margin-top: 2rem;
+}
+
+.row {
+    display: flex;
+}
+
+.hover {
+    transition: color .3s linear;
+}
+
+.hover:hover {
+    color: var(--soft-pink);
+}
+
+/* layout */
+
 .container {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 1rem 1.5rem;
+    align-items: center;
 }
 
-.container-header h1 {
+.container-header {
+    display: flex;
+    flex-direction: column;
+}
+
+.message h1 {
     font-weight: 700;
     font-size: 2rem;
     color: var(--dark-magenta);
@@ -26,6 +52,7 @@ body {
 
 .message {
     text-align: center;
+    flex: 0 0 100%;
 }
 
 .message p {
@@ -35,6 +62,7 @@ body {
 
 
 .container-starcards {
+    flex: 0 0 100%;
     margin-top: 2rem;
 }
 
@@ -57,4 +85,47 @@ body {
     color: orange;
     text-shadow: 0 2px 1px black;
     font-size: 1.3rem;
+}
+
+
+.container-social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.social-card {
+    background-color: var(--dark-magenta);
+    border-radius: 10px;
+    color: hsl(0, 0%, 80%);
+    font-weight: 400;
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+    padding: 2rem;
+}
+
+.avatar {
+    width: 50px;
+    height: 50px;
+    margin-right: 1rem;
+}
+
+.avatar img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.profile-identification {
+    align-content: flex-start;
+}
+
+.profile-identification p {
+    margin: 0 0 5px 0;
+    color: white;
+    font-weight: 700;
+}
+
+.profile-identification span {
+    color: var(--soft-pink);
+    font-weight: 400;
+    opacity: 0.7;
 }
